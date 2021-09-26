@@ -73,7 +73,7 @@ public class Bubblesort {
 
     public static void main(String[] args) {
         ArrayList<Integer> list = new ArrayList<>();
-        fill(list, 10);
+        fill(list, 10); /* new comment! this here adds 10 elements to list */
 
         System.out.println("Before sorting: " + list);
         sort(list);
