@@ -49,7 +49,7 @@ public class Bubblesort {
     }
 
     /**
-     * mease speed of bubblesort algorithm
+     * measure speed of bubblesort algorithm
      * @param list
      * @param length
      */
