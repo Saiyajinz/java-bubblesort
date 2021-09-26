@@ -48,6 +48,29 @@ public class Bubblesort {
         }
     }
 
+    /**
+     * mease speed of bubblesort algorithm
+     * @param list
+     * @param length
+     */
+    private static void measure(ArrayList<Integer> list, int length) {
+        double startTime = 0, stopTime = 0, avgTime = 0, avgSteps = 0;
+
+        for (int i = 0; i < 1000; i++) {
+            fill(list, length);
+
+            startTime += System.nanoTime();
+            avgSteps += sort(list);
+            stopTime += System.nanoTime();
+        }
+
+        avgTime = ((stopTime - startTime) / 10) / 1000000000;
+        avgSteps /= 10;
+
+        System.out.println("Average steps: " + avgSteps);
+        System.out.println("Average runtime: " + avgTime + " seconds");
+    }
+
     public static void main(String[] args) {
         ArrayList<Integer> list = new ArrayList<>();
         fill(list, 10); /* new comment! this here adds 10 elements to list */
