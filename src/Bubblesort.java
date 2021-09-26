@@ -48,7 +48,11 @@ public class Bubblesort {
         }
     }
 
-    /* new feature */
+    /**
+     * mease speed of bubblesort algorithm
+     * @param list
+     * @param length
+     */
     private static void measure(ArrayList<Integer> list, int length) {
         double startTime = 0, stopTime = 0, avgTime = 0, avgSteps = 0;
 
